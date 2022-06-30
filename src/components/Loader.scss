@@ -1,0 +1,18 @@
+
+.inline {
+  animation: circle 1.2s steps(8) infinite;
+  color: azure;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(450deg);
+  }
+}
+

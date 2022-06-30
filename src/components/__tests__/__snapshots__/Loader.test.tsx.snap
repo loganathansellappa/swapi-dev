@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Loader Page 1`] = `
+<div>
+  <p>
+    Something Went wrong 
+  </p>
+  <p>
+    400
+  </p>
+  <button>
+    Go Home
+  </button>
+</div>
+`;
