@@ -1,14 +1,23 @@
-import React from "react";
-import {ImSpinner2} from "react-icons/all";
-import "./Loader.scss";
+import React from 'react';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import './Loader.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface LoaderProps {
-    size?: number
-    color?: string
-    className?: string
+  color?: string;
+  className?: string;
 }
 
-export const Loader = ({size = 100, color = 'white', className = 'inline'}: LoaderProps) =>
-    <div  >
-        <ImSpinner2 size={size}  color={color} className={className}/>
-    </div>
+export const Loader = ({
+  color = 'white',
+  className = 'inline',
+}: LoaderProps) => (
+  <div>
+    <FontAwesomeIcon
+      icon={faSpinner}
+      spin={true}
+      color={color}
+      className={className}
+    />
+  </div>
+);

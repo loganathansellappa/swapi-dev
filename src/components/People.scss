@@ -6,7 +6,7 @@
   .searchInput {
     width: 100%;
     background-image: linear-gradient(0deg, red 0%, blue 100%);
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2rem;
     padding: 12px 20px;
     margin: 8px 0;
@@ -16,7 +16,7 @@
     box-sizing: border-box;
   }
   .people {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     padding-left: 10%;
     padding-top: 1%;
@@ -29,5 +29,4 @@
     justify-content: center;
     margin-top: 10%;
   }
-
 }

@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import EnvironmentPlugin from 'vite-plugin-environment';
@@ -12,10 +11,5 @@ export default defineConfig(({ command, mode }) => ({
     open: '/',
     port: 9000,
   },
-  plugins: [
-    react(),
-    EnvironmentPlugin([
-      'SWAP_URL',
-    ]),
-  ],
+  plugins: [react(), EnvironmentPlugin(['SWAP_URL'])],
 }));

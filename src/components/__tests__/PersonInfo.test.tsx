@@ -1,11 +1,12 @@
 import { mockResource, renderWithRouter, testStore } from '../..//utils/tests';
-import People from '../People';
+import { PersonInfo } from '../PersonInfo';
 import { Provider } from 'react-redux';
 import * as Hooks from '../../services/People';
 
-describe('Person', () => {
+describe('PersonInfo', () => {
   let element: { container: HTMLElement };
-  beforeEach(() => {
+
+  beforeEach((): void => {
     jest.spyOn(Hooks, 'useGetResourceQuery').mockReturnValue({
       data: mockResource(),
       isError: false,
@@ -14,12 +15,12 @@ describe('Person', () => {
     });
     element = renderWithRouter(
       <Provider store={testStore()}>
-        <People />
+        <PersonInfo />
       </Provider>
     );
   });
 
-  test('renders Person component', () => {
+  test('renders PersonInfo component', () => {
     expect(element.container.firstChild).toMatchSnapshot();
   });
 });

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person renders Person component 1`] = `
+<div
+  class="PeopleContainer"
+>
+  <div
+    class="search"
+  >
+    <input
+      class="searchInput"
+      placeholder="Search People/Planet/StarShips.."
+      value=""
+    />
+  </div>
+  <div
+    class="people"
+  />
+  <div
+    class="paginate"
+  >
+    <button
+      disabled=""
+    >
+      Previous
+    </button>
+    <button
+      disabled=""
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

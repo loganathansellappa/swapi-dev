@@ -1,20 +1,13 @@
 import { mockResource, renderWithRouter, testStore } from '../..//utils/tests';
-import People from '../People';
+import { Person } from '../Person';
 import { Provider } from 'react-redux';
-import * as Hooks from '../../services/People';
 
 describe('Person', () => {
   let element: { container: HTMLElement };
   beforeEach(() => {
-    jest.spyOn(Hooks, 'useGetResourceQuery').mockReturnValue({
-      data: mockResource(),
-      isError: false,
-      isLoading: false,
-      refetch: jest.fn(),
-    });
     element = renderWithRouter(
       <Provider store={testStore()}>
-        <People />
+        <Person person={mockResource()} />
       </Provider>
     );
   });

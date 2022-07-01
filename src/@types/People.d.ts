@@ -120,18 +120,28 @@ export interface LinkTypes {
   species: string[];
 }
 
-export type ResourceType = PersonType | StarShipType | PlanetType | FilmType | VehicleType | SpeciesType
+export type ResourceType =
+  | PersonType
+  | StarShipType
+  | PlanetType
+  | FilmType
+  | VehicleType
+  | SpeciesType;
 
-export type AnyResourceType = StarShipType & PersonType & PlanetType & FilmType & VehicleType & SpeciesType
+export type AnyResourceType = StarShipType &
+  PersonType &
+  PlanetType &
+  FilmType &
+  VehicleType &
+  SpeciesType;
 
 export interface RequestQuery {
-  queryKey: Array<string>
+  queryKey: Array<string>;
 }
-
 
 export interface ResourceResponse {
   count: number;
   next: string | null;
   previous: string | null;
-  results: ResourceType[]
+  results: ResourceType[];
 }

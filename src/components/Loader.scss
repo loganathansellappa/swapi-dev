@@ -1,7 +1,7 @@
-
 .inline {
   animation: circle 1.2s steps(8) infinite;
   color: azure;
+  font-size: 100px;
   margin-left: 50%;
   margin-top: 10%;
 }
@@ -15,4 +15,3 @@
     transform: rotate(450deg);
   }
 }
-
