@@ -6,7 +6,6 @@ export default {
   },
   moduleNameMapper: {
     '^.+\\.(css|less|scss)$': 'babel-jest',
-    '^.+\\.svg$': 'jest-svg-transformer',
   },
   testPathIgnorePatterns: ['/node_modules/', 'dist', '@types'],
   collectCoverage: true,
