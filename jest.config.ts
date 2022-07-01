@@ -8,7 +8,6 @@ export default {
     '^.+\\.(css|less|scss)$': 'babel-jest',
     '^.+\\.svg$': 'jest-svg-transformer',
   },
-  setupFilesAfterEnv: ['<rootDir>/jestSetup.js'],
   testPathIgnorePatterns: ['/node_modules/', 'dist', '@types'],
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{ts,js,tsx,jsx}'],
